@@ -1,12 +1,16 @@
 
 <!-- begin row -->
+			<div class="row">
+				<div class="col-md-12" style="padding:10px;">
+					<a href="/members/add" class="btn btn-sm btn-success pull-right"><i class="fa fa-plus m-r-5"></i> Add New</a>
+				</div>
+			</div>
             <div class="row">
                 <!-- begin col-12 -->
                 <div class="col-md-12">
                     <!-- begin panel -->
                     <div class="panel panel-inverse">
                         <div class="panel-heading">
-                            
                             <h4 class="panel-title">List of members</h4>
                         </div>
                         <div class="panel-body">
@@ -23,7 +27,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {{#each applicant}}
+                                    {{#each member}}
                                     <tr class="odd gradeX">
                                         <td>{{cn}}</td>
                                                                         <td> <a href="/user/{{uid}}">{{uid}}</a> </td> <!--or maybe using <a href> directly on the name?-->
